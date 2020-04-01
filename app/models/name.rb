@@ -1,3 +1,4 @@
 class Name < ApplicationRecord
-    has_many: ages 
+    has_many:ages
+    
 end
