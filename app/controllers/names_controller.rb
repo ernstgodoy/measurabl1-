@@ -1,7 +1,7 @@
 class NamesController < ApplicationController
   def index
     names = Name.all
-    render json: names
+    render json: names.to_json(:except => [:created_at, :updated_at], :include => :ages)
   end
     
     
